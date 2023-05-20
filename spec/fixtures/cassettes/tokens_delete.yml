@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.aleph-alpha.com/users/me/tokens/123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Access-Control-Expose-Headers:
+      - content-type
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 21 May 2023 19:44:25 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"The API token you specified was not found","code":"API_TOKEN_NOT_FOUND"}'
+  recorded_at: Sun, 21 May 2023 19:44:25 GMT
+recorded_with: VCR 6.1.0

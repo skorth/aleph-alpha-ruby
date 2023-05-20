@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aleph-alpha.com/explain?nice=false
+    body:
+      encoding: UTF-8
+      string: '{"model":"luminous-base","hosting":"aleph-alpha","prompt":"An apple
+        a day","target":"string","control_factor":0.1,"contextual_control_threshold":0,"control_log_additive":true,"postprocessing":"none","normalize":false,"prompt_granularity":{"type":"token","delimiter":"string"},"target_granularity":"complete","control_token_overlap":"partial"}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - content-type
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Date:
+      - Sun, 21 May 2023 19:52:04 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"model_version":"2023-04","explanations":[{"target":"string","items":[{"type":"text","scores":[{"start":0,"length":2,"score":-3.280653},{"start":3,"length":5,"score":2.0785313},{"start":9,"length":1,"score":-3.46945},{"start":11,"length":3,"score":-5.3589964}]},{"type":"target","scores":[]}]}]}'
+  recorded_at: Sun, 21 May 2023 19:52:05 GMT
+recorded_with: VCR 6.1.0

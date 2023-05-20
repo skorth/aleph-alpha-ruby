@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # Specify your gem"s dependencies in aleph-alpha-ruby.gemspec
 gemspec
 
+gem "dotenv", "~> 2.8.1"
 gem "rake", "~> 13.0"
 gem "rspec", "~> 3.12"
 gem "rubocop", "~> 1.51"

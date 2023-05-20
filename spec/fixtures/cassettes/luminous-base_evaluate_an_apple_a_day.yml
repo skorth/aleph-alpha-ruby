@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aleph-alpha.com/evaluate?nice=false
+    body:
+      encoding: UTF-8
+      string: '{"model":"luminous-base","prompt":"An apple a day","completion_expected":"keeps
+        the doctor away."}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Access-Control-Expose-Headers:
+      - content-type
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Date:
+      - Sun, 21 May 2023 19:46:31 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"model_version":"2023-04","result":{"log_probability":-12.283151,"log_perplexity":12.283151,"log_perplexity_per_token":2.0471919,"log_perplexity_per_character":0.55832505,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
+        keepseps the doctor away."}}'
+  recorded_at: Sun, 21 May 2023 19:46:32 GMT
+recorded_with: VCR 6.1.0

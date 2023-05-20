@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.aleph-alpha.com/users/me/tokens
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Access-Control-Expose-Headers:
+      - content-type
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Date:
+      - Sun, 21 May 2023 19:44:24 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"token_id":983,"description":"Test Token"},{"token_id":1739,"description":"Another
+        test token"},{"token_id":1772,"description":"token used on my laptop"},{"token_id":1773,"description":"token
+        used on my laptop"},{"token_id":1774,"description":"token used on my laptop"},{"token_id":1775,"description":"token
+        used on my laptop"},{"token_id":1776,"description":"token used on my laptop"},{"token_id":1777,"description":"token
+        used on my laptop"},{"token_id":1778,"description":"token used on my laptop"},{"token_id":1779,"description":"token
+        used on my laptop"},{"token_id":1780,"description":"token used on my laptop"},{"token_id":1782,"description":"token
+        used on my laptop"},{"token_id":1783,"description":"token used on my laptop"}]'
+  recorded_at: Sun, 21 May 2023 19:44:24 GMT
+recorded_with: VCR 6.1.0

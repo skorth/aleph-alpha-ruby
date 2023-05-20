@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aleph-alpha.com/complete?nice=false
+    body:
+      encoding: UTF-8
+      string: '{"model":"luminous-extended","prompt":"An apple a day","maximum_tokens":12}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Access-Control-Expose-Headers:
+      - content-type
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Date:
+      - Sun, 21 May 2023 19:44:23 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"completions":[{"completion":" keeps the doctor away, but what about
+        the dentist?\n","finish_reason":"maximum_tokens"}],"model_version":"2023-04"}'
+  recorded_at: Sun, 21 May 2023 19:44:24 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.aleph-alpha.com/users/me/requests
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json
+      Access-Control-Expose-Headers:
+      - content-type
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Date:
+      - Sun, 21 May 2023 19:44:27 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"create_timestamp":"2023-05-21T19:44:24.781979Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":52,"credits":0.000351},{"create_timestamp":"2023-05-21T19:44:24.539415Z","model_name":"luminous-base","request_type":"evaluation","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":6,"duration_millis":44,"credits":0.0003498},{"create_timestamp":"2023-05-21T19:44:24.275741Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":62,"credits":0.000351},{"create_timestamp":"2023-05-21T19:44:24.120280Z","model_name":"luminous-extended","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":546,"credits":0.000774},{"create_timestamp":"2023-05-21T19:44:23.455540Z","model_name":"luminous-base","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":475,"credits":0.000516},{"create_timestamp":"2023-05-21T19:40:17.006638Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":61,"credits":0.000351},{"create_timestamp":"2023-05-21T19:40:16.712274Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":63,"credits":0.000351},{"create_timestamp":"2023-05-21T19:40:16.518571Z","model_name":"luminous-extended","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":569,"credits":0.000774},{"create_timestamp":"2023-05-21T19:40:15.801305Z","model_name":"luminous-base","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":482,"credits":0.000516},{"create_timestamp":"2023-05-21T15:59:29.816593Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":64,"credits":0.000351}]'
+  recorded_at: Sun, 21 May 2023 19:44:28 GMT
+recorded_with: VCR 6.1.0

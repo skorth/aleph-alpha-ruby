@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.aleph-alpha.com/detokenize
+    body:
+      encoding: UTF-8
+      string: '{"model":"luminous-base","token_ids":[556,48741,247,2983,28063,301,10510,5469,17]}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Access-Control-Expose-Headers:
+      - content-type
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
+      Date:
+      - Sun, 21 May 2023 20:07:25 GMT
+      Strict-Transport-Security:
+      - max-age=63072000
+      Set-Cookie:
+      - SERVERID=aa-api; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":" An apple a day keeps the doctor away."}'
+  recorded_at: Sun, 21 May 2023 20:07:25 GMT
+recorded_with: VCR 6.1.0
