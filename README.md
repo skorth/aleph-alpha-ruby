@@ -1,5 +1,7 @@
 # Aleph Alpha Ruby Client
 
+[![Gem Version](https://badge.fury.io/rb/aleph-alpha-ruby.svg)](https://badge.fury.io/rb/aleph-alpha-ruby)
+
 <p align="center">
   <img src="https://i.imgur.com/FSM2NNV.png" width="50%" />
 </p>
