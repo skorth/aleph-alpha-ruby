@@ -27,14 +27,14 @@ http_interactions:
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Access-Control-Expose-Headers:
-      - content-type
       Content-Type:
       - text/plain; charset=utf-8
+      Access-Control-Expose-Headers:
+      - content-type
       Access-Control-Allow-Credentials:
       - 'true'
       Date:
-      - Sun, 21 May 2023 19:44:28 GMT
+      - Sat, 10 Jun 2023 13:30:17 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -42,5 +42,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: 1.12.0
-  recorded_at: Sun, 21 May 2023 19:44:28 GMT
+  recorded_at: Sat, 10 Jun 2023 13:30:18 GMT
 recorded_with: VCR 6.1.0

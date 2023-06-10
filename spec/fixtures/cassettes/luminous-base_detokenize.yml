@@ -26,15 +26,15 @@ http_interactions:
       - chunked
       Content-Type:
       - application/json
-      Access-Control-Expose-Headers:
-      - content-type
       Access-Control-Allow-Credentials:
       - 'true'
+      Access-Control-Expose-Headers:
+      - content-type
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
       Date:
-      - Sun, 21 May 2023 20:07:25 GMT
+      - Sat, 10 Jun 2023 13:30:08 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -42,5 +42,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"result":" An apple a day keeps the doctor away."}'
-  recorded_at: Sun, 21 May 2023 20:07:25 GMT
+  recorded_at: Sat, 10 Jun 2023 13:30:08 GMT
 recorded_with: VCR 6.1.0

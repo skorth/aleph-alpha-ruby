@@ -34,7 +34,7 @@ http_interactions:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
       Date:
-      - Sun, 21 May 2023 20:36:39 GMT
+      - Sat, 10 Jun 2023 13:30:09 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -42,5 +42,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: "[]"
-  recorded_at: Sun, 21 May 2023 20:36:40 GMT
+  recorded_at: Sat, 10 Jun 2023 13:30:09 GMT
 recorded_with: VCR 6.1.0

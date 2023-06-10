@@ -157,10 +157,10 @@ client.completions(
 #### Embeddings
 
 ```ruby
-client.embeddings(
+response = client.embeddings(
   parameters: {
-    model: "model name",
-    prompt: "some text",
+    model: "luminous-base",
+    prompt: "An apple a day keeps the doctor away.",
     layers: [
       0,
       1
@@ -171,6 +171,12 @@ client.embeddings(
     ]
   }
 )
+
+# => Index 0 corresponds to the word embeddings used as input to the first transformer layer
+puts response.dig("embeddings", "layer_0", "max")
+
+# => Index 1 corresponds to the hidden state as output by the first transformer layer
+puts response.dig("embeddings", "layer_1", "max")
 ```
 
 #### Semantic Embeddings

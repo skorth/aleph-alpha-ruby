@@ -20,7 +20,7 @@ RSpec.describe AlephAlpha::Client do
 
     it "succeeds" do
       VCR.use_cassette(cassette) do
-        expect(response["model_version"]).to eq("2023-01")
+        expect(response["model_version"]).to eq("2023-05")
         expect(response.dig("answers", 0,
                             "answer")).to eq("Wolves first appeared eight hundred thousand years ago.")
       end

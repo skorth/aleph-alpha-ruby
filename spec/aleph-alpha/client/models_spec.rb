@@ -6,17 +6,18 @@ RSpec.describe AlephAlpha::Client do
 
       it "succeeds" do
         VCR.use_cassette(cassette) do
-          expect(response.length).to eq(4)
+          expect(response.length).to eq(6)
           expect(response.first).to eq(
             {
-              "name" => "luminous-extended",
-              "description" => "Multilingual model trained on English, German, French, Spanish and Italian",
+              "name" => "luminous-base-control",
+              "description" => "A variant of the Luminous-base model that is optimized for downstream task performance",
               "max_context_size" => 2048,
               "hostings" => ["aleph-alpha"],
-              "image_support" => true,
+              "image_support" => false,
               "qa_support" => false,
               "summarization_support" => false,
-              "embedding_types" => [],
+              "embedding_types" => %w[symmetric_128 asymmetric_128_document
+                                      asymmetric_128_query symmetric asymmetric_document asymmetric_query],
               "maximum_completion_tokens" => nil
             }
           )

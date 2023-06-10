@@ -27,20 +27,20 @@ http_interactions:
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Access-Control-Expose-Headers:
-      - content-type
       Content-Type:
       - application/json
+      Access-Control-Expose-Headers:
+      - content-type
       Access-Control-Allow-Credentials:
       - 'true'
       Date:
-      - Sun, 21 May 2023 19:44:24 GMT
+      - Sat, 10 Jun 2023 13:30:14 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
       encoding: ASCII-8BIT
-      string: '{"id":7267,"email":"korth.sascha@gmail.com","role":"Client","token":null,"credits_remaining":"0.1363214","invoice_allowed":false,"out_of_credits_threshold":"0","terms_of_service_version":"generic-2022-02-18"}'
-  recorded_at: Sun, 21 May 2023 19:44:25 GMT
+      string: '{"id":7267,"email":"korth.sascha@gmail.com","role":"Client","token":null,"credits_remaining":"49.518171","invoice_allowed":false,"out_of_credits_threshold":"0","terms_of_service_version":"generic-2022-02-18"}'
+  recorded_at: Sat, 10 Jun 2023 13:30:14 GMT
 recorded_with: VCR 6.1.0

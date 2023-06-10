@@ -28,25 +28,25 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-      - accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
       Access-Control-Expose-Headers:
       - content-type
       Content-Type:
       - application/json
-      Access-Control-Allow-Credentials:
-      - 'true'
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
       Date:
-      - Sun, 21 May 2023 20:25:45 GMT
+      - Sat, 10 Jun 2023 13:30:13 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
       encoding: ASCII-8BIT
-      string: '{"model_version":"2023-04","summary":"Wolves are native to North America
+      string: '{"model_version":"2023-05","summary":"Wolves are native to North America
         and Eurasia, but are now only found in a very limited portion of their former
         territory."}'
-  recorded_at: Sun, 21 May 2023 20:25:45 GMT
+  recorded_at: Sat, 10 Jun 2023 13:30:14 GMT
 recorded_with: VCR 6.1.0

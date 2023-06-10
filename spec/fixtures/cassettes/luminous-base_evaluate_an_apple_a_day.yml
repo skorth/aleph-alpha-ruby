@@ -25,24 +25,24 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
+      Access-Control-Expose-Headers:
+      - content-type
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Access-Control-Expose-Headers:
-      - content-type
-      Content-Type:
-      - application/json
       Access-Control-Allow-Credentials:
       - 'true'
+      Content-Type:
+      - application/json
       Date:
-      - Sun, 21 May 2023 19:46:31 GMT
+      - Sat, 10 Jun 2023 13:30:08 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
       encoding: ASCII-8BIT
-      string: '{"model_version":"2023-04","result":{"log_probability":-12.283151,"log_perplexity":12.283151,"log_perplexity_per_token":2.0471919,"log_perplexity_per_character":0.55832505,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
+      string: '{"model_version":"2023-05","result":{"log_probability":-12.283151,"log_perplexity":12.283151,"log_perplexity_per_token":2.0471919,"log_perplexity_per_character":0.55832505,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
         keepseps the doctor away."}}'
-  recorded_at: Sun, 21 May 2023 19:46:32 GMT
+  recorded_at: Sat, 10 Jun 2023 13:30:09 GMT
 recorded_with: VCR 6.1.0

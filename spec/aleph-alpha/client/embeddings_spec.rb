@@ -24,7 +24,7 @@ RSpec.describe AlephAlpha::Client do
 
       it "succeeds" do
         VCR.use_cassette(cassette) do
-          expect(response["model_version"]).to eq("2023-04")
+          expect(response["model_version"]).to eq("2023-05")
           expect(response.dig("embeddings", "layer_1", "max").length).to eq(5120)
           expect(response.dig("embeddings", "layer_0", "max").length).to eq(5120)
         end

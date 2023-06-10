@@ -24,17 +24,17 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
-      Content-Type:
-      - application/json
       Access-Control-Expose-Headers:
       - content-type
-      Access-Control-Allow-Credentials:
-      - 'true'
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json
       Date:
-      - Sun, 21 May 2023 19:44:23 GMT
+      - Sat, 10 Jun 2023 13:30:07 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -42,6 +42,6 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"completions":[{"completion":" keeps the doctor away, but what about
-        a banana a day","finish_reason":"maximum_tokens"}],"model_version":"2023-04"}'
-  recorded_at: Sun, 21 May 2023 19:44:23 GMT
+        a banana a day","finish_reason":"maximum_tokens"}],"model_version":"2023-05"}'
+  recorded_at: Sat, 10 Jun 2023 13:30:08 GMT
 recorded_with: VCR 6.1.0

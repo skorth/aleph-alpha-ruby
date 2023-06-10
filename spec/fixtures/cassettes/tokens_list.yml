@@ -26,15 +26,15 @@ http_interactions:
       - chunked
       Content-Type:
       - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
       Access-Control-Expose-Headers:
       - content-type
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
       Date:
-      - Sun, 21 May 2023 19:44:24 GMT
+      - Sat, 10 Jun 2023 13:30:13 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -47,6 +47,8 @@ http_interactions:
         used on my laptop"},{"token_id":1776,"description":"token used on my laptop"},{"token_id":1777,"description":"token
         used on my laptop"},{"token_id":1778,"description":"token used on my laptop"},{"token_id":1779,"description":"token
         used on my laptop"},{"token_id":1780,"description":"token used on my laptop"},{"token_id":1782,"description":"token
-        used on my laptop"},{"token_id":1783,"description":"token used on my laptop"}]'
-  recorded_at: Sun, 21 May 2023 19:44:24 GMT
+        used on my laptop"},{"token_id":1783,"description":"token used on my laptop"},{"token_id":1784,"description":"token
+        used on my laptop"},{"token_id":2033,"description":"token used on my laptop"},{"token_id":2034,"description":"token
+        used on my laptop"}]'
+  recorded_at: Sat, 10 Jun 2023 13:30:14 GMT
 recorded_with: VCR 6.1.0

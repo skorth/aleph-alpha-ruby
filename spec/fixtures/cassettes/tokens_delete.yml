@@ -27,14 +27,14 @@ http_interactions:
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Access-Control-Expose-Headers:
-      - content-type
-      Access-Control-Allow-Credentials:
-      - 'true'
       Content-Type:
       - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Expose-Headers:
+      - content-type
       Date:
-      - Sun, 21 May 2023 19:44:25 GMT
+      - Sat, 10 Jun 2023 13:30:14 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -42,5 +42,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"error":"The API token you specified was not found","code":"API_TOKEN_NOT_FOUND"}'
-  recorded_at: Sun, 21 May 2023 19:44:25 GMT
+  recorded_at: Sat, 10 Jun 2023 13:30:14 GMT
 recorded_with: VCR 6.1.0

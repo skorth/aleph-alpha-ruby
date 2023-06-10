@@ -24,23 +24,23 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
       Access-Control-Allow-Credentials:
       - 'true'
       Content-Type:
       - application/json
       Access-Control-Expose-Headers:
       - content-type
-      Vary:
-      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-      - accept-encoding
       Date:
-      - Sun, 21 May 2023 19:44:27 GMT
+      - Sat, 10 Jun 2023 13:30:17 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
       encoding: ASCII-8BIT
-      string: '[{"create_timestamp":"2023-05-21T19:44:24.781979Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":52,"credits":0.000351},{"create_timestamp":"2023-05-21T19:44:24.539415Z","model_name":"luminous-base","request_type":"evaluation","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":6,"duration_millis":44,"credits":0.0003498},{"create_timestamp":"2023-05-21T19:44:24.275741Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":62,"credits":0.000351},{"create_timestamp":"2023-05-21T19:44:24.120280Z","model_name":"luminous-extended","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":546,"credits":0.000774},{"create_timestamp":"2023-05-21T19:44:23.455540Z","model_name":"luminous-base","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":475,"credits":0.000516},{"create_timestamp":"2023-05-21T19:40:17.006638Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":61,"credits":0.000351},{"create_timestamp":"2023-05-21T19:40:16.712274Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":63,"credits":0.000351},{"create_timestamp":"2023-05-21T19:40:16.518571Z","model_name":"luminous-extended","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":569,"credits":0.000774},{"create_timestamp":"2023-05-21T19:40:15.801305Z","model_name":"luminous-base","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":482,"credits":0.000516},{"create_timestamp":"2023-05-21T15:59:29.816593Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":64,"credits":0.000351}]'
-  recorded_at: Sun, 21 May 2023 19:44:28 GMT
+      string: '[{"create_timestamp":"2023-06-10T13:30:14.133677Z","model_name":"luminous-extended","request_type":"summarization","token_count_prompt":67,"image_count_prompt":0,"token_count_completion":27,"duration_millis":1467,"credits":0.0056583},{"create_timestamp":"2023-06-10T13:30:12.572717Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":67,"credits":0.000351},{"create_timestamp":"2023-06-10T13:30:12.413980Z","model_name":"luminous-supreme","request_type":"qa","token_count_prompt":73,"image_count_prompt":0,"token_count_completion":13,"duration_millis":2814,"credits":0.0198614},{"create_timestamp":"2023-06-10T13:30:09.347137Z","model_name":"luminous-base","request_type":"explanation","token_count_prompt":0,"image_count_prompt":0,"token_count_completion":0,"duration_millis":96,"credits":0.1},{"create_timestamp":"2023-06-10T13:30:09.163878Z","model_name":"luminous-base","request_type":"evaluation","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":6,"duration_millis":45,"credits":0.0003498},{"create_timestamp":"2023-06-10T13:30:08.980712Z","model_name":"luminous-base","request_type":"embedding","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":77,"credits":0.000351},{"create_timestamp":"2023-06-10T13:30:08.818883Z","model_name":"luminous-base","request_type":"detokenization","token_count_prompt":9,"image_count_prompt":0,"token_count_completion":0,"duration_millis":0,"credits":0.0002025},{"create_timestamp":"2023-06-10T13:30:08.725326Z","model_name":"luminous-extended","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":600,"credits":0.000774},{"create_timestamp":"2023-06-10T13:30:08.011264Z","model_name":"luminous-base","request_type":"completion","token_count_prompt":4,"image_count_prompt":0,"token_count_completion":12,"duration_millis":499,"credits":0.000516},{"create_timestamp":"2023-06-10T13:25:45.654246Z","model_name":"luminous-extended","request_type":"summarization","token_count_prompt":67,"image_count_prompt":0,"token_count_completion":27,"duration_millis":1449,"credits":0.0056583}]'
+  recorded_at: Sat, 10 Jun 2023 13:30:17 GMT
 recorded_with: VCR 6.1.0

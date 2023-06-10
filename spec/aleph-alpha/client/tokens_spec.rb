@@ -34,7 +34,7 @@ RSpec.describe AlephAlpha::Client do
 
       it "returns an error" do
         VCR.use_cassette(cassette) do
-          expect(response.dig("error")).to include("The API token you specified was not found")
+          expect(response["error"]).to include("The API token you specified was not found")
         end
       end
     end
