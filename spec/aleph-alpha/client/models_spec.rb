@@ -9,15 +9,14 @@ RSpec.describe AlephAlpha::Client do
           expect(response.length).to eq(6)
           expect(response.first).to eq(
             {
-              "name" => "luminous-base-control",
-              "description" => "A variant of the Luminous-base model that is optimized for downstream task performance",
+              "name" => "luminous-extended",
+              "description" => "Multilingual model trained on English, German, French, Spanish and Italian",
               "max_context_size" => 2048,
               "hostings" => ["aleph-alpha"],
-              "image_support" => false,
+              "image_support" => true,
               "qa_support" => false,
               "summarization_support" => false,
-              "embedding_types" => %w[symmetric_128 asymmetric_128_document
-                                      asymmetric_128_query symmetric asymmetric_document asymmetric_query],
+              "embedding_types" => [],
               "maximum_completion_tokens" => nil
             }
           )

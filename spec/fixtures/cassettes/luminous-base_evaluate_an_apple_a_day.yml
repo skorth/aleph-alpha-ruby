@@ -11,7 +11,7 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      - Bearer <ALEPH_ALPHA_ACCESS_TOKEN>
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -35,14 +35,14 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Sat, 10 Jun 2023 13:30:08 GMT
+      - Sun, 29 Oct 2023 21:16:54 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
-      encoding: ASCII-8BIT
-      string: '{"model_version":"2023-05","result":{"log_probability":-12.283151,"log_perplexity":12.283151,"log_perplexity_per_token":2.0471919,"log_perplexity_per_character":0.55832505,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
+      encoding: UTF-8
+      string: '{"model_version":"2023-05","result":{"log_probability":-12.276108,"log_perplexity":12.276108,"log_perplexity_per_token":2.046018,"log_perplexity_per_character":0.5580049,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
         keepseps the doctor away."}}'
-  recorded_at: Sat, 10 Jun 2023 13:30:09 GMT
+  recorded_at: Sun, 29 Oct 2023 21:16:54 GMT
 recorded_with: VCR 6.1.0

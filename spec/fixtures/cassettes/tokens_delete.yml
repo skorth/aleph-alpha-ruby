@@ -10,7 +10,7 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      - Bearer <ALEPH_ALPHA_ACCESS_TOKEN>
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -24,6 +24,8 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
+      Access-Control-Expose-Headers:
+      - content-type
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
@@ -31,16 +33,14 @@ http_interactions:
       - application/json
       Access-Control-Allow-Credentials:
       - 'true'
-      Access-Control-Expose-Headers:
-      - content-type
       Date:
-      - Sat, 10 Jun 2023 13:30:14 GMT
+      - Sun, 29 Oct 2023 21:17:00 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"error":"The API token you specified was not found","code":"API_TOKEN_NOT_FOUND"}'
-  recorded_at: Sat, 10 Jun 2023 13:30:14 GMT
+  recorded_at: Sun, 29 Oct 2023 21:17:00 GMT
 recorded_with: VCR 6.1.0

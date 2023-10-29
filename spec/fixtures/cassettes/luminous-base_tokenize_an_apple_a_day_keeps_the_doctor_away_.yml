@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.aleph-alpha.com/users/me/tokens
+    uri: https://api.aleph-alpha.com/tokenize
     body:
       encoding: UTF-8
-      string: '{"description":"token used on my laptop"}'
+      string: '{"model":"luminous-base","prompt":"An apple a day keeps the doctor
+        away.","tokens":true,"token_ids":true}'
     headers:
       Content-Type:
       - application/json
@@ -26,13 +27,13 @@ http_interactions:
       - chunked
       Access-Control-Expose-Headers:
       - content-type
-      Access-Control-Allow-Credentials:
-      - 'true'
+      Content-Type:
+      - application/json
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Content-Type:
-      - text/plain
+      Access-Control-Allow-Credentials:
+      - 'true'
       Date:
       - Sun, 29 Oct 2023 21:16:59 GMT
       Strict-Transport-Security:
@@ -41,6 +42,6 @@ http_interactions:
       - SERVERID=aa-api; path=/
     body:
       encoding: UTF-8
-      string: '{"metadata":{"token_id":2035,"description":"token used on my laptop"},"token":"SomeToken"}'
+      string: '{"tokens":["ĠAn","Ġapple","Ġa","Ġday","Ġkeeps","Ġthe","Ġdoctor","Ġaway","."],"token_ids":[556,48741,247,2983,28063,301,10510,5469,17]}'
   recorded_at: Sun, 29 Oct 2023 21:17:00 GMT
 recorded_with: VCR 6.1.0

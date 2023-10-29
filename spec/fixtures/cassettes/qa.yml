@@ -15,7 +15,7 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Bearer <ALEPHALPHA_ACCESS_TOKEN>
+      - Bearer <ALEPH_ALPHA_ACCESS_TOKEN>
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,29 +29,29 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
-      Access-Control-Allow-Credentials:
-      - 'true'
       Access-Control-Expose-Headers:
       - content-type
-      Content-Type:
-      - application/json
+      Access-Control-Allow-Credentials:
+      - 'true'
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
+      Content-Type:
+      - application/json
       Date:
-      - Sat, 10 Jun 2023 13:30:12 GMT
+      - Sun, 29 Oct 2023 21:16:57 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"model_version":"2023-05","answers":[{"answer":"Wolves first appeared
-        eight hundred thousand years ago.","score":0.7822499,"evidence":"The gray
+        eight hundred thousand years ago.","score":0.7822584,"evidence":"The gray
         wolf (Canis lupus) is a species of placental mammal of the carnivore order.
         The earliest fossil record dates back eight hundred thousand years. Wolves
         are native to North America and Eurasia, where they were once widely distributed
         and abundant. Today, they inhabit only a very limited portion of their former
         territory."}]}'
-  recorded_at: Sat, 10 Jun 2023 13:30:12 GMT
+  recorded_at: Sun, 29 Oct 2023 21:16:57 GMT
 recorded_with: VCR 6.1.0

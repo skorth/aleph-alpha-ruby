@@ -13,7 +13,7 @@ RSpec.describe AlephAlpha::Client do
 
     describe "#create" do
       let(:cassette) { "tokens create" }
-      let!(:response) do
+      let(:response) do
         VCR.use_cassette(cassette) do
           AlephAlpha::Client.new.tokens.create(
             parameters: {
@@ -25,6 +25,7 @@ RSpec.describe AlephAlpha::Client do
 
       it "succeeds" do
         expect(response.dig("metadata", "description")).to eq("token used on my laptop")
+        expect(response["token"]).to eq("SomeToken")
       end
     end
 
