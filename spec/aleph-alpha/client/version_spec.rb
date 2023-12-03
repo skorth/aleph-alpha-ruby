@@ -5,7 +5,7 @@ RSpec.describe AlephAlpha::Client do
 
     it "succeeds" do
       VCR.use_cassette(cassette) do
-        expect(response).to eq("1.12.0")
+        expect(response).to eq("1.13.0")
       end
     end
   end

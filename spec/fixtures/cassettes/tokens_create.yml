@@ -24,23 +24,23 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
-      Access-Control-Expose-Headers:
-      - content-type
       Access-Control-Allow-Credentials:
       - 'true'
+      Access-Control-Expose-Headers:
+      - content-type
+      Content-Type:
+      - text/plain
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Content-Type:
-      - text/plain
       Date:
-      - Sun, 29 Oct 2023 21:16:59 GMT
+      - Sun, 03 Dec 2023 12:59:59 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
     body:
       encoding: UTF-8
-      string: '{"metadata":{"token_id":2035,"description":"token used on my laptop"},"token":"SomeToken"}'
-  recorded_at: Sun, 29 Oct 2023 21:17:00 GMT
+      string: SomeToken
+  recorded_at: Sun, 03 Dec 2023 12:59:59 GMT
 recorded_with: VCR 6.1.0

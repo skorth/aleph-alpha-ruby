@@ -29,7 +29,7 @@ RSpec.describe AlephAlpha::Client do
 
       it "succeeds" do
         VCR.use_cassette(cassette) do
-          expect(response["model_version"]).to eq("2023-05")
+          expect(response["model_version"]).to eq("2022-04")
           expect(response.dig("explanations", 0, "target")).to eq("string")
         end
       end

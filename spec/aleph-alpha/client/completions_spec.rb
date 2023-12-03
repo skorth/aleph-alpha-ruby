@@ -20,7 +20,7 @@ RSpec.describe AlephAlpha::Client do
 
         it "succeeds" do
           VCR.use_cassette(cassette) do
-            expect(response["model_version"]).to eq("2023-05")
+            expect(response["model_version"]).to eq("2022-04")
             expect(response.dig("completions", 0,
                                 "completion")).to eq(" keeps the doctor away, but what about a banana a day")
             expect(response.dig("completions", 0, "finish_reason")).to eq("maximum_tokens")
@@ -33,7 +33,7 @@ RSpec.describe AlephAlpha::Client do
 
         it "succeeds" do
           VCR.use_cassette(cassette) do
-            expect(response["model_version"]).to eq("2023-05")
+            expect(response["model_version"]).to eq("2022-05")
             expect(response.dig("completions", 0,
                                 "completion")).to eq(" keeps the doctor away, but what about the dentist?\n")
             expect(response.dig("completions", 0, "finish_reason")).to eq("maximum_tokens")

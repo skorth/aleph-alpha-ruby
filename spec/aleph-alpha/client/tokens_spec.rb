@@ -24,8 +24,7 @@ RSpec.describe AlephAlpha::Client do
       end
 
       it "succeeds" do
-        expect(response.dig("metadata", "description")).to eq("token used on my laptop")
-        expect(response["token"]).to eq("SomeToken")
+        expect(response).to eq("SomeToken")
       end
     end
 

@@ -25,6 +25,8 @@ http_interactions:
     headers:
       Transfer-Encoding:
       - chunked
+      Access-Control-Allow-Credentials:
+      - 'true'
       Access-Control-Expose-Headers:
       - content-type
       Content-Type:
@@ -32,10 +34,8 @@ http_interactions:
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
       Date:
-      - Sun, 29 Oct 2023 21:16:59 GMT
+      - Sun, 03 Dec 2023 12:55:12 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
@@ -43,5 +43,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"tokens":["ĠAn","Ġapple","Ġa","Ġday","Ġkeeps","Ġthe","Ġdoctor","Ġaway","."],"token_ids":[556,48741,247,2983,28063,301,10510,5469,17]}'
-  recorded_at: Sun, 29 Oct 2023 21:17:00 GMT
+  recorded_at: Sun, 03 Dec 2023 12:55:12 GMT
 recorded_with: VCR 6.1.0
