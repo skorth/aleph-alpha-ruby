@@ -20,31 +20,28 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: ''
     headers:
-      Transfer-Encoding:
-      - chunked
-      Access-Control-Expose-Headers:
-      - content-type
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
       Access-Control-Allow-Credentials:
       - 'true'
       Content-Type:
       - application/json
-      Vary:
-      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-      - accept-encoding
+      Access-Control-Expose-Headers:
+      - content-type
       Date:
-      - Sun, 03 Dec 2023 12:59:59 GMT
+      - Fri, 01 Mar 2024 11:53:35 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: '[{"token_id":4159,"description":"Gem Update"},{"token_id":4160,"description":"token
-        used on my laptop"},{"token_id":4161,"description":"token used on my laptop"},{"token_id":4162,"description":"token
-        used on my laptop"},{"token_id":4163,"description":"token used on my laptop"},{"token_id":4164,"description":"token
-        used on my laptop"},{"token_id":4165,"description":"token used on my laptop"},{"token_id":4166,"description":"token
-        used on my laptop"},{"token_id":4167,"description":"token used on my laptop"}]'
-  recorded_at: Sun, 03 Dec 2023 12:59:59 GMT
-recorded_with: VCR 6.1.0
+      string: '[{"token_id":5101,"description":"ruby gem"},{"token_id":5102,"description":"token
+        used on my laptop"},{"token_id":5103,"description":"token used on my laptop"}]'
+  recorded_at: Fri, 01 Mar 2024 11:53:36 GMT
+recorded_with: VCR 6.2.0

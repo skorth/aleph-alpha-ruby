@@ -6,17 +6,17 @@ RSpec.describe AlephAlpha::Client do
 
       it "succeeds" do
         VCR.use_cassette(cassette) do
-          expect(response.length).to eq(6)
+          expect(response.length).to eq(12)
           expect(response.first).to eq(
             {
-              "name" => "luminous-base-control",
-              "description" => "A variant of the Luminous-base model that is optimized for downstream task performance",
+              "name" => "luminous-extended-control-20240215",
+              "description" => "Version 20240215 of the control fine-tuning for luminous-base",
               "max_context_size" => 2048,
               "hostings" => ["aleph-alpha"],
               "image_support" => false,
               "qa_support" => false,
               "summarization_support" => false,
-              "embedding_types" => ["symmetric_128", "asymmetric_128_document", "asymmetric_128_query", "symmetric", "asymmetric_document", "asymmetric_query"],
+              "embedding_types" => [],
               "maximum_completion_tokens" => nil
             }
           )

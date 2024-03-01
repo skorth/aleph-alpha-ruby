@@ -21,27 +21,27 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: ''
     headers:
-      Transfer-Encoding:
-      - chunked
-      Access-Control-Expose-Headers:
-      - content-type
+      Vary:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+      - accept-encoding
       Access-Control-Allow-Credentials:
       - 'true'
       Content-Type:
       - application/json
-      Vary:
-      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
-      - accept-encoding
+      Access-Control-Expose-Headers:
+      - content-type
       Date:
-      - Sun, 03 Dec 2023 12:55:06 GMT
+      - Fri, 01 Mar 2024 11:53:30 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: '{"model_version":"2022-04","explanations":[{"target":"string","items":[{"type":"text","scores":[{"start":0,"length":2,"score":-3.3250122},{"start":3,"length":5,"score":1.9274826},{"start":9,"length":1,"score":-3.4718266},{"start":11,"length":3,"score":-5.4066296}]},{"type":"target","scores":[]}]}]}'
-  recorded_at: Sun, 03 Dec 2023 12:55:06 GMT
-recorded_with: VCR 6.1.0
+      string: '{"model_version":"2022-04","explanations":[{"target":"string","items":[{"type":"text","scores":[{"start":0,"length":2,"score":-3.2240639},{"start":3,"length":5,"score":2.1853542},{"start":9,"length":1,"score":-3.4108124},{"start":11,"length":3,"score":-5.3148403}]},{"type":"target","scores":[]}]}]}'
+  recorded_at: Fri, 01 Mar 2024 11:53:30 GMT
+recorded_with: VCR 6.2.0

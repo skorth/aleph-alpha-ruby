@@ -4,8 +4,8 @@ source "https://rubygems.org"
 gemspec
 
 gem "dotenv", "~> 2.8.1"
-gem "rake", "~> 13.0"
-gem "rspec", "~> 3.12"
-gem "rubocop", "~> 1.51"
-gem "vcr", "~> 6.1.0"
-gem "webmock", "~> 3.18.1"
+gem "rake", "~> 13.1"
+gem "rspec", "~> 3.13"
+gem "rubocop", "~> 1.61"
+gem "vcr", "~> 6.2.0"
+gem "webmock", "~> 3.23.0"

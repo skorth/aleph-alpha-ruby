@@ -21,28 +21,28 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: ''
     headers:
-      Transfer-Encoding:
-      - chunked
-      Access-Control-Expose-Headers:
-      - content-type
-      Content-Type:
-      - application/json
-      Access-Control-Allow-Credentials:
-      - 'true'
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Type:
+      - application/json
+      Access-Control-Expose-Headers:
+      - content-type
       Date:
-      - Sun, 03 Dec 2023 12:55:06 GMT
+      - Fri, 01 Mar 2024 11:53:30 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: '{"model_version":"2022-04","result":{"log_probability":-12.276108,"log_perplexity":12.276108,"log_perplexity_per_token":2.046018,"log_perplexity_per_character":0.5580049,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
-        keepseps the doctor away."}}'
-  recorded_at: Sun, 03 Dec 2023 12:55:06 GMT
-recorded_with: VCR 6.1.0
+      string: '{"model_version":"2022-04","result":{"log_probability":-12.278221,"log_perplexity":12.278221,"log_perplexity_per_token":2.0463703,"log_perplexity_per_character":0.55810094,"correct_greedy":false,"token_count":6,"character_count":22,"completion":"
+        keepseps the doctor away."},"num_tokens_prompt_total":10}'
+  recorded_at: Fri, 01 Mar 2024 11:53:30 GMT
+recorded_with: VCR 6.2.0

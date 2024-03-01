@@ -20,35 +20,41 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: ''
     headers:
-      Transfer-Encoding:
-      - chunked
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Expose-Headers:
-      - content-type
       Content-Type:
       - application/json
+      Access-Control-Expose-Headers:
+      - content-type
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
       Date:
-      - Sun, 03 Dec 2023 12:55:07 GMT
+      - Fri, 01 Mar 2024 11:53:30 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
-      string: '[{"name":"luminous-base-control","description":"A variant of the Luminous-base
-        model that is optimized for downstream task performance","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":["symmetric_128","asymmetric_128_document","asymmetric_128_query","symmetric","asymmetric_document","asymmetric_query"],"maximum_completion_tokens":null},{"name":"luminous-extended-control","description":"A
+      string: '[{"name":"luminous-extended-control-20240215","description":"Version
+        20240215 of the control fine-tuning for luminous-base","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null},{"name":"luminous-supreme-control-20230501","description":"Version
+        20230501 of the control fine-tuning for luminous-supreme","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":1400},{"name":"luminous-extended","description":"Multilingual
+        model trained on English, German, French, Spanish and Italian","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":true,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null},{"name":"luminous-base-control","description":"A
+        variant of the Luminous-base model that is optimized for downstream task performance","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":["symmetric_128","asymmetric_128_document","asymmetric_128_query","symmetric","asymmetric_document","asymmetric_query"],"maximum_completion_tokens":null},{"name":"luminous-base-control-20230501","description":"Version
+        20230501 of the control fine-tuning for luminous-base","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":["symmetric_128","asymmetric_128_document","asymmetric_128_query","symmetric","asymmetric_document","asymmetric_query"],"maximum_completion_tokens":null},{"name":"luminous-base-control-20240215","description":"Version
+        20240215 of the control fine-tuning for luminous-base","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":["symmetric_128","asymmetric_128_document","asymmetric_128_query","symmetric","asymmetric_document","asymmetric_query"],"maximum_completion_tokens":null},{"name":"luminous-supreme","description":"Multilingual
+        model trained on English, German, French, Spanish and Italian","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":1400},{"name":"luminous-extended-control","description":"A
         variant of the Luminous-extended model that is optimized for downstream task
-        performance","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null},{"name":"luminous-supreme","description":"Multilingual
-        model trained on English, German, French, Spanish and Italian","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":1400},{"name":"luminous-supreme-control","description":"A
+        performance","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null},{"name":"luminous-supreme-control-20240215","description":"Version
+        20240215 of the control fine-tuning for luminous-supreme","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null},{"name":"luminous-extended-control-20230501","description":"Version
+        20230501 of the control fine-tuning for luminous-base","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null},{"name":"luminous-supreme-control","description":"A
         variant of the Luminous-Supreme model that is optimized for downstream task
         performance","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":false,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":1400},{"name":"luminous-base","description":"Multilingual
-        model trained on English, German, French, Spanish and Italian","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":true,"qa_support":false,"summarization_support":false,"embedding_types":["symmetric_128","asymmetric_128_document","asymmetric_128_query","symmetric","asymmetric_document","asymmetric_query"],"maximum_completion_tokens":null},{"name":"luminous-extended","description":"Multilingual
-        model trained on English, German, French, Spanish and Italian","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":true,"qa_support":false,"summarization_support":false,"embedding_types":[],"maximum_completion_tokens":null}]'
-  recorded_at: Sun, 03 Dec 2023 12:55:07 GMT
-recorded_with: VCR 6.1.0
+        model trained on English, German, French, Spanish and Italian","max_context_size":2048,"hostings":["aleph-alpha"],"image_support":true,"qa_support":false,"summarization_support":false,"embedding_types":["symmetric_128","asymmetric_128_document","asymmetric_128_query","symmetric","asymmetric_document","asymmetric_query"],"maximum_completion_tokens":null}]'
+  recorded_at: Fri, 01 Mar 2024 11:53:31 GMT
+recorded_with: VCR 6.2.0

@@ -20,27 +20,27 @@ http_interactions:
   response:
     status:
       code: 200
-      message: OK
+      message: ''
     headers:
-      Transfer-Encoding:
-      - chunked
-      Access-Control-Expose-Headers:
-      - content-type
       Access-Control-Allow-Credentials:
       - 'true'
+      Content-Type:
+      - application/json
       Vary:
       - Origin, Access-Control-Request-Method, Access-Control-Request-Headers
       - accept-encoding
-      Content-Type:
-      - application/json
+      Access-Control-Expose-Headers:
+      - content-type
       Date:
-      - Sun, 03 Dec 2023 12:55:06 GMT
+      - Fri, 01 Mar 2024 11:53:29 GMT
       Strict-Transport-Security:
       - max-age=63072000
       Set-Cookie:
       - SERVERID=aa-api; path=/
+      Transfer-Encoding:
+      - chunked
     body:
       encoding: UTF-8
       string: '{"result":" An apple a day keeps the doctor away."}'
-  recorded_at: Sun, 03 Dec 2023 12:55:06 GMT
-recorded_with: VCR 6.1.0
+  recorded_at: Fri, 01 Mar 2024 11:53:30 GMT
+recorded_with: VCR 6.2.0
