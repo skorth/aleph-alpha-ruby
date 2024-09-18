@@ -1,6 +1,6 @@
-# Aleph Alpha Ruby Client
+# Important! Aleph Alpha will discontinue access to the public API as of November 30, 2024.
 
-[![Gem Version](https://badge.fury.io/rb/aleph-alpha-ruby.svg)](https://badge.fury.io/rb/aleph-alpha-ruby)
+# Aleph Alpha Ruby Client
 
 <p align="center">
   <img src="https://i.imgur.com/FSM2NNV.png" width="50%" />
